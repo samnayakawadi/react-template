@@ -1,8 +1,21 @@
+import { useEffect } from "react"
+import { useDispatch, useSelector } from "react-redux"
+import { Card } from "shivaji-ui"
+import { globalActions } from "./global/redux/globalSlice.js"
+
 function App() {
+
+  const globalState = useSelector(prevState => prevState.global)
+  const dispatch = useDispatch()
+
+  useEffect(()=>{
+    dispatch(globalActions.updateAppName("My App"))
+  }, [])
+
   return (
-    <h1 className="text-3xl font-bold underline">
-      DIPTI by BPRD
-    </h1>
+    <Card margin="2" color="success">
+      {globalState.appName}
+    </Card>
   )
 }
 
