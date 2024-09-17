@@ -4,12 +4,12 @@ import DefaultRoutes from "./default/default.routes.jsx"
 
 const MainRoutes = () => {
   return (
-    <>
+    <div className="w-full">
       <Routes>
         <Route path="/" element={<DefaultRoutes />} />
         <Route path="/dashboard" element={<DashboardRoutes />} />
       </Routes>
-    </>
+    </div>
   )
 }
 
