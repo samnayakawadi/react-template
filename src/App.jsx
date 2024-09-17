@@ -1,8 +1,8 @@
 function App() {
   return (
-    <div>
+    <h1 className="text-3xl font-bold underline">
       DIPTI by BPRD
-    </div>
+    </h1>
   )
 }
 
