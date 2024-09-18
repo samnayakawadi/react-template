@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router"
 import { Basis, FlexBox } from "shivaji-ui"
 import Menu from "../../components/dashboard/components/menu/Menu.jsx"
 import Navbar from "../../components/dashboard/components/navbar/Navbar.jsx"
-import BulkAddInstitutions from "../../features/bulk-add-institutions/BulkAddInstitutions.jsx"
+import BulkAddInstitutions from "../../features/feature_bulkAddInstitutions/BulkAddInstitutions.jsx"
 
 const DashboardRoutes = () => {
     return (

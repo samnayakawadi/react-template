@@ -14,7 +14,7 @@ const Menu = () => {
     const renderMenuItems = () => {
         return (
             dashboardState.dashboardMenu.menuItems.map((singleMenuItem, singleMenuIndex) => {
-                return (<Button key={singleMenuIndex} type={2} width="full">{singleMenuItem.menuTitle}</Button>)
+                return (<Button fontAwesomeIconPosition="left" fontAwesomeIcon={singleMenuItem.fontAwesomeIcon} key={singleMenuIndex} type={2} width="full">{singleMenuItem.menuTitle}</Button>)
             })
         )
     }
