@@ -7,7 +7,7 @@ const MainRoutes = () => {
     <div className="w-full">
       <Routes>
         <Route path="/" element={<DefaultRoutes />} />
-        <Route path="/dashboard" element={<DashboardRoutes />} />
+        <Route path="/dashboard/*" element={<DashboardRoutes />} />
       </Routes>
     </div>
   )

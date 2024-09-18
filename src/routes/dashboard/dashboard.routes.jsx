@@ -1,7 +1,8 @@
 import { Route, Routes } from "react-router"
-import { Basis, Card, FlexBox } from "shivaji-ui"
+import { Basis, FlexBox } from "shivaji-ui"
 import Menu from "../../components/dashboard/components/menu/Menu.jsx"
 import Navbar from "../../components/dashboard/components/navbar/Navbar.jsx"
+import BulkAddInstitutions from "../../features/bulk-add-institutions/BulkAddInstitutions.jsx"
 
 const DashboardRoutes = () => {
     return (
@@ -12,11 +13,9 @@ const DashboardRoutes = () => {
                     <Menu />
                 </Basis>
                 <Basis size="10/12" otherClasses="h-full">
-                    <Card otherClasses="h-full">
-                        <Routes>
-                            <Route path="bulk-add-institution" />
-                        </Routes>
-                    </Card>
+                    <Routes>
+                        <Route path="bulk-add-institutions" element={<BulkAddInstitutions />} />
+                    </Routes>
                 </Basis>
             </FlexBox>
         </FlexBox>
